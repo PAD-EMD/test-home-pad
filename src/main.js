@@ -3,6 +3,7 @@ import * as THREE from 'three'
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js'
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js'
 import { DRACOLoader } from 'three/addons/loaders/DRACOLoader.js'
+import modelUrl from '/gta-light.glb?url'
 
 // Scene
 const scene = new THREE.Scene()
@@ -56,7 +57,7 @@ dracoLoader.setDecoderPath('https://www.gstatic.com/draco/versioned/decoders/1.5
 const loader = new GLTFLoader()
 loader.setDRACOLoader(dracoLoader)
 loader.load(
-  '/gta-light.glb',
+  modelUrl,
   (gltf) => {
     const model = gltf.scene
 
