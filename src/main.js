@@ -33,8 +33,8 @@ controls.minDistance = 1
 controls.maxDistance = 20
 
 // Lock vertical rotation - only horizontal rotation allowed
-controls.minPolarAngle = Math.PI / 2  // 90 degrees
-controls.maxPolarAngle = Math.PI / 2  // 90 degrees
+controls.minPolarAngle = Math.PI / 2
+controls.maxPolarAngle = Math.PI / 2
 
 // Lights
 const ambientLight = new THREE.AmbientLight(0xffffff, 0.5)
